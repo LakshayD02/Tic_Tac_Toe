@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+  }
+
+  body {
+    height: 100vh;
+    background: url(Background.jpg);
+  }
+
+  html {
+    font-size: 15px;
+  }
+  
+  .wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .container {
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+  }
+
+  .button-option {
+    background: #000000ce;
+    height: 22vmin;
+    width: 22vmin;
+    border: 2px solid rgb(0, 217, 255);
+    border-radius: 8px;
+    font-size: 12vmin;
+    color: #2f00ff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.048);
+  }
+
+  #restart {
+    font-size: 1.5em;
+    padding: 1.1em;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid rgb(0, 140, 255);
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  
+  #restart:hover {
+    font-size: 1.5em;
+    padding: 1.1em;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid white;
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+  .popup {
+    background: url(Background.jpg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+  }
+  
+  #new-game {
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0.2em;
+    border: 2px solid rgb(0, 140, 255);
+  }
+
+  #new-game:hover {
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0.2em;
+    border: 2px solid rgb(0, 140, 255);
+    cursor: pointer;
+  }
+
+  #message {
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  
+  #message:hover {
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+  
+  
+  .popup.hide {
+    display: none;
+  }
